@@ -16,3 +16,6 @@ A simple web notes application made as part of Dicoding's Front-End Web Developm
 1. Clone or download this project.
 2. Open `index.html` in your browser.
 3. Enjoy the Notes App!
+
+## Screen Capture of the App
+![alt text](image.png)
