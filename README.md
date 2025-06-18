@@ -18,4 +18,4 @@ A simple web notes application made as part of Dicoding's Front-End Web Developm
 3. Enjoy the Notes App!
 
 ## Screen Capture of the App
-![alt text](image.png)
+![alt text](/assets/image.png)
