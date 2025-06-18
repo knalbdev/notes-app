@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notes App | Submission Proyek</title>
+  <title>Noted | Simple Note-Taking</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
   
@@ -14,14 +18,22 @@
   <app-bar></app-bar>
 
   <main>
-    <note-form></note-form>
-
-    <section>
-      <h2>My Notes</h2>
-      <div id="notesList" class="notes-list-container">
+    <div class="main-content">
+      <div class="form-section">
+        <note-form></note-form>
       </div>
-    </section>
+      
+      <div class="notes-section">
+        <h2>Your Notes</h2>
+        <div id="notesList" class="notes-list-container">
+        </div>
+      </div>
+    </div>
   </main>
+
+  <footer>
+    <p>Copyright &copy; 2025 - Setia Notes</p>
+  </footer>
 
 </body>
 </html>
