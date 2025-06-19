@@ -10,18 +10,18 @@ const main = () => {
   const noteFormElement = document.querySelector('note-form');
   const loadingElement = document.querySelector('loading-indicator');
 
-  const showLoading = () => loadingElement.style.display = 'block';
-  const hideLoading = () => loadingElement.style.display = 'none';
+  const showLoading = () => (loadingElement.style.display = 'block');
+  const hideLoading = () => (loadingElement.style.display = 'none');
 
   const showAlert = (message) => alert(message);
 
   const renderNotes = (notes) => {
     notesListElement.innerHTML = '';
     if (notes.length === 0) {
-        notesListElement.innerHTML = '<p class="notes-empty">Note is empty.</p>';
-        return;
+      notesListElement.innerHTML = '<p class="notes-empty">Note is empty.</p>';
+      return;
     }
-    notes.forEach(note => {
+    notes.forEach((note) => {
       const noteItem = document.createElement('note-item');
       noteItem.setAttribute('note-id', note.id);
       noteItem.setAttribute('title', note.title);
@@ -47,7 +47,7 @@ const main = () => {
     event.preventDefault();
     const title = event.target.noteTitle.value;
     const body = event.target.noteBody.value;
-    
+
     showLoading();
     try {
       await createNote({ title, body });

@@ -7,7 +7,8 @@ class NoteItem extends HTMLElement {
     const noteId = this.getAttribute('note-id');
     const title = this.getAttribute('title') || 'No Title';
     const body = this.getAttribute('body') || 'No Body';
-    const createdAt = this.getAttribute('created-at') || new Date().toISOString();
+    const createdAt =
+      this.getAttribute('created-at') || new Date().toISOString();
 
     const formattedDate = new Date(createdAt).toLocaleDateString('id-ID', {
       year: 'numeric',
@@ -31,10 +32,12 @@ class NoteItem extends HTMLElement {
     this.querySelector('.btn-delete').addEventListener('click', (event) => {
       event.stopPropagation();
 
-      this.dispatchEvent(new CustomEvent('delete-note', {
-        detail: { noteId: noteId },
-        bubbles: true, 
-      }));
+      this.dispatchEvent(
+        new CustomEvent('delete-note', {
+          detail: { noteId: noteId },
+          bubbles: true,
+        }),
+      );
     });
   }
 }

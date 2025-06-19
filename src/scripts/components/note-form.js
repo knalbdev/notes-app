@@ -16,7 +16,7 @@ class NoteForm extends HTMLElement {
         </form>
       </div>
     `;
-    
+
     const titleInput = this.querySelector('#noteTitle');
     const bodyInput = this.querySelector('#noteBody');
     const titleValidation = this.querySelector('#titleValidation');
@@ -28,8 +28,12 @@ class NoteForm extends HTMLElement {
         validationElement.textContent = '';
       }
     };
-    titleInput.addEventListener('input', () => validateInput(titleInput, titleValidation, 'Title is required.'));
-    bodyInput.addEventListener('input', () => validateInput(bodyInput, bodyValidation, 'Body is required.'));
+    titleInput.addEventListener('input', () =>
+      validateInput(titleInput, titleValidation, 'Title is required.'),
+    );
+    bodyInput.addEventListener('input', () =>
+      validateInput(bodyInput, bodyValidation, 'Body is required.'),
+    );
   }
 }
 customElements.define('note-form', NoteForm);
