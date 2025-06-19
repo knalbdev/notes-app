@@ -18,7 +18,7 @@ const main = () => {
   const renderNotes = (notes) => {
     notesListElement.innerHTML = '';
     if (notes.length === 0) {
-        notesListElement.innerHTML = '<p class="notes-empty">Tidak ada catatan.</p>';
+        notesListElement.innerHTML = '<p class="notes-empty">Note is empty.</p>';
         return;
     }
     notes.forEach(note => {
