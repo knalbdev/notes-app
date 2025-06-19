@@ -5,7 +5,7 @@ class AppBar extends HTMLElement {
   render() {
     this.innerHTML = `
       <header class="app-bar">
-        <h1 class="app-title">Noted</h1>
+        <h1 class="app-title">Blank Notes</h1>
         <p class="app-subtitle">Your simple and fun note-taking app.</p>
       </header>
     `;
