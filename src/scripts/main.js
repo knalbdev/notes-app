@@ -1,8 +1,8 @@
 import '../style.css';
-import './components/AppBar.js';
-import './components/NoteForm.js';
-import './components/NoteItem.js';
-import './components/LoadingIndicator.js';
+import './components/app-bar.js';
+import './components/note-form.js';
+import './components/note-item.js';
+import './components/loading-indicator.js';
 import { getNotes, createNote, deleteNote } from './api.js';
 
 const main = () => {
